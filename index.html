@@ -1,7 +1,25 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-</body>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PDFファイルの表示</title>
+    <style>
+      #pdf-container {
+        width: 100%;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="pdf-container" src="https://sun-savior.com/wp/wp-content/uploads/2023/01/lockmate_torisetsu_Ver.1.0.0.pdf"></iframe>
+    <script>
+      var pdfContainer = document.getElementById("pdf-container");
+      pdfContainer.style.width = window.innerWidth + "px";
+      pdfContainer.style.height = window.innerHeight + "px";
+      window.addEventListener("resize", function() {
+        pdfContainer.style.width = window.innerWidth + "px";
+        pdfContainer.style.height = window.innerHeight + "px";
+      });
+    </script>
+  </body>
 </html>
-<!---->
