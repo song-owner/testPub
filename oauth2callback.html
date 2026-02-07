@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>OAuth 認証コード</h2>
-<pre id="code"></pre>
-
-<script>
-  const params = new URLSearchParams(window.location.search);
-  document.getElementById('code').innerText = params.get('code');
-</script>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<body>
 <script>
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
